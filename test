@@ -20,7 +20,7 @@ Circle["2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Circle["2"].Name = "Frame"
 Circle["2"].BackgroundTransparency = 1
 Circle["2"].Position = UDim2.new(0.626000047, 0, 0.25, 0)
-Circle["2"].Visible = false -- FOV değişkenini tanımlamamışsınız, bu yüzden direkt olarak false olarak ayarladım.
+
 
 -- Store the time when the code starts executing
 local start = os.clock()
@@ -36,9 +36,6 @@ game.StarterGui:SetCore("SendNotification", {
 -- Load the ESP library and turn it on
 local esp = loadstring(game:HttpGet("https://raw.githubusercontent.com/andrewc0de/Roblox/02ca70f0c5349ee86799781718f48e280cd73269/Dependencies/ESPLUASKELETONTEST"))()
 esp:Toggle(true)
-
-local SelectedColor = Color3.fromRGB(255, 0, 4) -- Seçilen renk
-local FOV = false -- FOV değişkenini tanımlamamışsınız, bu yüzden direkt olarak false olarak ayarladım.
 
 -- Configure ESP settings
 
